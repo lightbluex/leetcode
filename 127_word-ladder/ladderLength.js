@@ -19,7 +19,7 @@ var ladderLength = function(beginWord, endWord, wordList) {
 
 var count = function(word, endWord, wordList, len){
   len++;
-  console.log(word+" "+endWord+" "+len);
+  // console.log(word+" "+endWord+" "+len);
   if(wordList.size===0) return false;
   if(closedWord(word,endWord)) return pushLen(len);
   if(min!==0 && len>=min) return false;
