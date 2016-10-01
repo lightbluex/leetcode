@@ -15,6 +15,7 @@ Graph.prototype.addEdge = function(v,w){
 Graph.prototype.dfs = function(v){
   if(this.visited.indexOf(v)>=0) return false;
   this.visited.push(v);
+  console.log(v);
   for(var i = 0; i < this.adj[v].length; i++){
     this.dfs(this.adj[v][i]);
   }
